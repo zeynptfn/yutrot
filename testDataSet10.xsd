@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="testDataSet10" targetNamespace="http://tempuri.org/testDataSet10.xsd" xmlns:mstns="http://tempuri.org/testDataSet10.xsd" xmlns="http://tempuri.org/testDataSet10.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="testConnectionStringliste" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="testConnectionStringliste (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.yutrotden.Properties.Settings.GlobalReference.Default.testConnectionStringliste" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="yöneticiTableAdapter" GeneratorDataComponentClassName="yöneticiTableAdapter" Name="yönetici" UserDataComponentName="yöneticiTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="testConnectionStringliste (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `YONETICI_ID`, `YONETICI_AD`, `YONETICI_SIFRE` FROM `yönetici`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="YONETICI_ID" DataSetColumn="YONETICI_ID" />
+              <Mapping SourceColumn="YONETICI_AD" DataSetColumn="YONETICI_AD" />
+              <Mapping SourceColumn="YONETICI_SIFRE" DataSetColumn="YONETICI_SIFRE" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="testDataSet10" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="testDataSet10" msprop:Generator_UserDSName="testDataSet10">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="yönetici" msprop:Generator_TableClassName="yöneticiDataTable" msprop:Generator_TableVarName="tableyönetici" msprop:Generator_TablePropName="yönetici" msprop:Generator_RowDeletingName="yöneticiRowDeleting" msprop:Generator_RowChangingName="yöneticiRowChanging" msprop:Generator_RowEvHandlerName="yöneticiRowChangeEventHandler" msprop:Generator_RowDeletedName="yöneticiRowDeleted" msprop:Generator_UserTableName="yönetici" msprop:Generator_RowChangedName="yöneticiRowChanged" msprop:Generator_RowEvArgName="yöneticiRowChangeEvent" msprop:Generator_RowClassName="yöneticiRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="YONETICI_ID" msprop:Generator_ColumnVarNameInTable="columnYONETICI_ID" msprop:Generator_ColumnPropNameInRow="YONETICI_ID" msprop:Generator_ColumnPropNameInTable="YONETICI_IDColumn" msprop:Generator_UserColumnName="YONETICI_ID" type="xs:byte" />
+              <xs:element name="YONETICI_AD" msprop:Generator_ColumnVarNameInTable="columnYONETICI_AD" msprop:Generator_ColumnPropNameInRow="YONETICI_AD" msprop:Generator_ColumnPropNameInTable="YONETICI_ADColumn" msprop:Generator_UserColumnName="YONETICI_AD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="YONETICI_SIFRE" msprop:Generator_ColumnVarNameInTable="columnYONETICI_SIFRE" msprop:Generator_ColumnPropNameInRow="YONETICI_SIFRE" msprop:Generator_ColumnPropNameInTable="YONETICI_SIFREColumn" msprop:Generator_UserColumnName="YONETICI_SIFRE" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:yönetici" />
+      <xs:field xpath="mstns:YONETICI_ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
